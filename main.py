@@ -1,5 +1,5 @@
 from drafter import *
-import sympy as sp
+from sympy import *
 
 
 set_website_title("Derivative/Integral Helper")
@@ -157,9 +157,9 @@ def derivative(state: State) -> Page:
             Page: a page displaying the derivative and a button to return home. 
     """
     state.operation = "derivative"
-    x = sp.symbols("x")
-    f = sp.simplify(state.function)
-    derivative = sp.diff(f, x)
+    x = symbols("x")
+    f = simplify(state.function)
+    derivative = diff(f, x)
     
     state.result = str(derivative)
     
@@ -234,12 +234,12 @@ def integral(state: State, bounds: str) -> Page:
         
     """
     state.bounds = bounds
-    x = sp.symbols("x")
-    f = sp.simplify(state.function)
+    x = symbols("x")
+    f = simplify(state.function)
     bound = state.bounds.split(",")
     a = bound[0]
     b = bound[-1]
-    integral = sp.integrate(f, (x, a, b))
+    integral = integrate(f, (x, a, b))
     
     state.result = str(integral)
     

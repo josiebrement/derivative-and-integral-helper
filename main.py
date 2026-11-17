@@ -7,7 +7,9 @@ set_site_information(
     author="Josie Brement",
     description="Derives and Integrates given functions.",
     sources="",
-    planning=["Copy of CS1 Final Project 0_ Pick a Problem.pdf", "Final Project Design Phase.pdf"],
+    planning=["Copy of CS1 Final Project 0_ Pick a Problem.pdf", 
+              "Final Project Design Phase.pdf",
+              "CISC Final Project LLM Transcript.pdf"],
     links=["https://github.com/josiebrement/derivative-and-integral-helper.git"]
 )
 
